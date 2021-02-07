@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChampionDetailsActivity"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/imgViewChampionSplashArt"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/relLytChampDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtViewChampionDetailsChampionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/champ_name"
+                android:textSize="30sp"
+                />
+
+            <TextView
+                android:id="@+id/txtViewChampionDetailsChampionTitle"
+                android:layout_below="@+id/txtViewChampionDetailsChampionName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/champ_title"
+                android:textSize="25sp"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtViewChampionBlurb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/champ_blurb"
+            android:textSize="20sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/relLytChampPartype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+            <TextView
+                android:id="@+id/txtViewPartypeStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/champ_partype"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/txtViewPartype"
+                android:layout_toRightOf="@+id/txtViewPartypeStatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="@string/placeholder"
+                android:textSize="20sp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLytChampInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relLytChamInfoLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgViewAtkIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/atkdmg_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewAttackStatic"
+                    android:layout_toRightOf="@+id/imgViewAtkIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_attack"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewAttack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewAttackStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgViewDefIcon"
+                    android:layout_below="@+id/imgViewAtkIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/armor_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewDefenseStatic"
+                    android:layout_toRightOf="@+id/imgViewDefIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttackStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_defense"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewDefense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttack"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewDefenseStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLytChamInfoRight"
+                android:layout_toRightOf="@+id/relLytChamInfoLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+                <ImageView
+                    android:id="@+id/imgViewApIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/ap_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewMagicStatic"
+                    android:layout_toRightOf="@+id/imgViewApIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_magic"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMagic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMagicStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgViewDiffIcon"
+                    android:layout_below="@+id/imgViewApIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/diff_icon"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewDifficultyStatic"
+                    android:layout_toRightOf="@+id/imgViewDiffIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMagicStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_diff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewDifficulty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMagic"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewDifficultyStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relLytChampStats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/relLytChampStatsLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtViewHpStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_hp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHpperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_Hpperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHpperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMpStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_Mp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMpperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_Mpperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMpperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMpperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMovespeedStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_movespeed"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMovespeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMovespeedStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewArmorStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMovespeedStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_armor"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewArmor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMovespeed"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMovespeedStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewArmorperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewArmorStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_armorperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewArmorperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewArmor"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMovespeedStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/txtViewSpellblockStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewArmorperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_spellblock"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewSpellblock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewArmorperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewSpellblockStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/txtViewSpellblockperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewSpellblockStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_spellblockperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewSpellblockperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewSpellblock"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewSpellblockperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewAttackRangeStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewSpellblockperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_attackrange"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewAttackRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewSpellblockperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewAttackRangeStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relLytChamStatsRight"
+                android:layout_toRightOf="@+id/relLytChampStatsLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtViewHpregenStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_hpregen"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHpregen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpregenStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHpregenperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpregenStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_hpregenperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewHpregenperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpregen"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpregenperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewMpregenStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpregenperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_mpregen"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMpregen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewHpregenperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewMpregenStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewMpregenperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpregenStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_hpregenperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewMpregenperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpregen"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewHpregenperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewCritStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpregenperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_crit"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewCrit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewMpregenperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewCritStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewCritperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewCritStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_critperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewCritperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewCrit"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewCritperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewAttackDamageStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewCritperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_attackdamage"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewAttackDamage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewCritperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewAttackDamageStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewAttackDamageperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttackDamageStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_hpregenperlevel"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewAttackDamageperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttackDamage"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewAttackDamageperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+
+                <TextView
+                    android:id="@+id/txtViewattackspeedperlevelStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttackDamageperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_attackspeedperlvl"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewattackspeedperlevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewAttackDamageperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewattackspeedperlevelStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewattackspeedStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewattackspeedperlevelStatic"
+                    android:layout_margin="5dp"
+                    android:text="@string/champ_attackspeed"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/txtViewattackspeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtViewattackspeedperlevel"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/txtViewattackspeedStatic"
+                    android:text="@string/placeholder"
+                    android:textSize="20sp"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</ScrollView>
+
+

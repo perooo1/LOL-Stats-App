@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">LOLStats</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="placeholder">phdr</string>
+    <string name="champ_name">Champion Name</string>
+    <string name="champ_title">Champion Title</string>
+    <string name="champ_blurb">Champion blurb</string>
+    <string name="champ_partype">Partype:</string>
+    <string name="champ_attack">Attack:</string>
+    <string name="champ_defense">Defense:</string>
+    <string name="champ_magic">Magic:</string>
+    <string name="champ_diff">Difficulty:</string>
+    <string name="champ_hp">HP:</string>
+    <string name="champ_Hpperlevel">HP per lvl:</string>
+    <string name="champ_Mp">MP:</string>
+    <string name="champ_Mpperlevel">MP per lvl:</string>
+    <string name="champ_movespeed">Movespeed:</string>
+    <string name="champ_armor">Armor:</string>
+    <string name="champ_armorperlevel">Armor per lvl:</string>
+    <string name="champ_spellblock">Spellblock:</string>
+    <string name="champ_spellblockperlevel">SPB per lvl:</string>
+    <string name="champ_attackrange">Attack Range:</string>
+    <string name="champ_hpregen">HP regen:</string>
+    <string name="champ_hpregenperlevel">Per lvl:</string>
+    <string name="champ_mpregen">MP regen:</string>
+    <string name="champ_crit">Crit:</string>
+    <string name="champ_critperlevel">Crit per lvl:</string>
+    <string name="champ_attackdamage">Atk dmg:</string>
+    <string name="champ_attackspeedperlvl">Atkspd plvl:</string>
+    <string name="champ_attackspeed">Atk Speed:</string>
+    <string name="item_name">Item name</string>
+    <string name="item_desc">Item desc</string>
+    <string name="item_txt">Item txt</string>
+    <string name="item_base_gold">Base gold:</string>
+    <string name="item_total_gold">Total gold:</string>
+    <string name="item_sell_gold">Sell gold:</string>
+    <string name="rune_name">Rune name</string>
+    <string name="rune_path">Rune path</string>
+    <string name="rune_keystone">Rune keystone</string>
+    <string name="rune_desc">Rune desc</string>
+</resources>

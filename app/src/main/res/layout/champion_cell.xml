@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+    android:id="@+id/relLytChampionCell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:id="@+id/imgViewChampionCellChampionIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_margin="10dp"
+        android:src="@mipmap/ic_launcher"
+        />
+
+    <TextView
+        android:id="@+id/txtViewChampionCellChampionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Champion name"
+        android:layout_toRightOf="@+id/imgViewChampionCellChampionIcon"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>
+
+
+</FrameLayout>

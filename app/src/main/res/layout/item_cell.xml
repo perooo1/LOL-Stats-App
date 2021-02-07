@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relLytItemCell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:id="@+id/imgViewItemCellItemIcon"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            />
+
+        <TextView
+            android:id="@+id/txtViewItemCellItemName"
+            android:layout_toRightOf="@+id/imgViewItemCellItemIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            />
+
+        <TextView
+            android:id="@+id/txtViewItemCellItemDesc"
+            android:layout_below="@+id/txtViewItemCellItemName"
+            android:layout_toRightOf="@+id/imgViewItemCellItemIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/item_desc"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/txtViewItemCellItemPlaintext"
+            android:layout_toRightOf="@+id/imgViewItemCellItemIcon"
+            android:layout_below="@+id/txtViewItemCellItemDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_txt"
+            android:layout_margin="5dp"
+            android:textSize="15sp"
+        />
+
+
+
+        <RelativeLayout
+            android:id="@+id/relLytItemCellItemGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtViewItemCellItemPlaintext"
+            android:layout_centerInParent="true"
+            android:layout_margin="5dp"
+
+            >
+
+            <RelativeLayout
+                android:id="@+id/relLytItemCellItemGoldBase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                >
+
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemBaseGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/item_base_gold"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemBaseGold"
+                    android:layout_toRightOf="@+id/txtViewItemCellItemBaseGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/placeholder"
+                    android:textSize="15sp"
+                />
+
+                <ImageView
+                    android:id="@+id/imgViewGoldIconAsset"
+                    android:layout_toRightOf="@+id/txtViewItemCellItemBaseGold"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gold_icon_asset"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLytItemCellItemGoldTotal"
+                android:layout_toRightOf="@+id/relLytItemCellItemGoldBase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemTotalGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/item_total_gold"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemTotalGold"
+                    android:layout_toRightOf="@+id/txtViewItemCellItemTotalGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/placeholder"
+                    android:textSize="15sp"
+                    />
+
+                <ImageView
+                    android:layout_toRightOf="@+id/txtViewItemCellItemTotalGold"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gold_icon_asset"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relLytItemCellItemGoldSell"
+                android:layout_toRightOf="@+id/relLytItemCellItemGoldTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemSellGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/item_sell_gold"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/txtViewItemCellItemSellGold"
+                    android:layout_toRightOf="@+id/txtViewItemCellItemSellGoldStatic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="@string/placeholder"
+                    android:textSize="15sp"
+                    />
+
+                <ImageView
+                    android:layout_toRightOf="@+id/txtViewItemCellItemSellGold"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/gold_icon_asset"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
